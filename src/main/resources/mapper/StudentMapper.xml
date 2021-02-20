@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lwz.shardingJdbc.dao.StudentDao">
+
+    <!-- sql写法和之前类似，对于增删改查此处使用的是逻辑表名student，不是实际表名student_0、student_1、student_2等 -->
+    <insert id="addStudent" parameterType="Object">
+        insert into student
+        (sname,sno,age) value (#{sname},#{sno},#{age})
+    </insert>
+
+</mapper>

@@ -1,0 +1,22 @@
+server:
+  port: 8080
+
+
+mybatis:
+  mapper-locations: classpath:mapper/*Mapper.xml
+  type-aliases-package: com.lwz.entity
+
+#showSql
+logging:
+  level:
+    com:
+      example:
+        mapper: debug
+
+
+spring:
+  datasource:
+    username: root
+    password: 1234
+    url: jdbc:mysql://123.57.16.136:3306/db0?useUnicode=true&characterEncoding=utf-8&useSSL=true&serverTimezone=UTC
+    driver-class-name: com.mysql.jdbc.Driver
